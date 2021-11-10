@@ -14,7 +14,7 @@ public class Car {
     }
 
     public void decreasePrice(int percent){
-        price = (price/100*(100-percent));
+        price = (int)(price* ((100.0-percent)/100));
     }
 
     public String getBrand() {

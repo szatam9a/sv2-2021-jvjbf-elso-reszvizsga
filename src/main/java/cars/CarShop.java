@@ -18,7 +18,7 @@ public class CarShop {
     
     
     public boolean addCar(Car car) {
-        if (car.getPrice() < highestPriceInTheShop) {
+        if (car.getPrice() <= highestPriceInTheShop) {
             cars.add(car);
             return true;
         }
